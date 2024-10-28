@@ -17,14 +17,14 @@ const Consulta = () => {
     <div key={paciente.id}>
      <Link to={`/modificacion/${paciente.id}`}> <p><strong>ID:</strong> {paciente.id}</p></Link>
       <p><strong>Nombre:</strong> {paciente.nombre}</p>
-      <p><strong>Apellido:</strong> {paciente.apellido}</p>
+      <p><strong>Apellido:</strong> {paciente.apellido}</p> 
       <p><strong>Fecha de Alta:</strong> {paciente.fechaAlta}</p>
       <p>-------------------------------------------------</p>
       <br />
   
     </div>
   ))}
-      <Link to={"/"}>Home</Link>
+     <h3> <Link to={"/"}>Home</Link> </h3>
 </div>
   );
 };

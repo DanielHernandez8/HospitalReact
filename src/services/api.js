@@ -10,5 +10,5 @@ export const getPerson = async (id) => await instance.get(`/${id}`);
 
 export const deletePerson = async (id) => await instance.delete('/' + id);
 
-export const updatePerson = async (id, name) => await instance.put('/'+id, { nombre: name });
+export const updatePerson = async (person) => await instance.put('/'+person.id, person);
 
